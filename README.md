@@ -16,7 +16,7 @@ _{User will enter a word they want to count in an input field, and then create a
 * _Open the app in your web browser_
 * _Start Counting!!!_
 
-_{Make sure you have those gems! This app won't run without Sinatra and will be a pain without Sinatra-contrib}_
+_{Make sure you have those gems! This app won't run without Sinatra and will be a pain without Sinatra-contrib. If you don't want to do that, follow this Heroku link: https://mighty-springs-2613.herokuapp.com/}_
 
 ## Technologies Used
 
