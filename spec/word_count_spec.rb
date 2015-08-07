@@ -13,4 +13,8 @@ describe('String#word_count') do
   it('manages uppercased characters in input string') do
     expect("CAT, DOG, BIRD, CAT, DOG".word_count("cat")).to(eq(2))
   end
+
+  it('manages uppercased characters in target word') do
+    expect("cat, dog, bird, cat, dog".word_count("CAT")).to(eq(2))
+  end
 end
