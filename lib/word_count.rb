@@ -1,6 +1,7 @@
 class String
   define_method(:word_count) do |target_word|
     upcase_check_array = self.split(" ")
+    target_word.downcase!()
 
     word_count_array = []
 
