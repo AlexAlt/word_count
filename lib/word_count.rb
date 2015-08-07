@@ -24,6 +24,7 @@ class String
         end
       end
     end
+    
     target_count
   end
 end
