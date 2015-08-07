@@ -1,8 +1,16 @@
 class String
   define_method(:word_count) do |target_word|
-    word_count_array = self.split(" ")
+    upcase_check_array = self.split(" ")
+
+    word_count_array = []
 
     target_count = 0
+
+
+    upcase_check_array.each() do |upcase_word|
+      down_case_word = upcase_word.downcase()
+      word_count_array.push(down_case_word)
+    end
 
     word_count_array.each() do |index|
       if index.include?(",")
