@@ -6,7 +6,11 @@ describe('String#word_count') do
     expect("cat dog bird cat dog".word_count("cat")).to(eq(2))
   end
 
-  it('manages non-letter characters') do
+  it('manages non-letter characters in input string') do
     expect("cat, dog, bird, cat, dog".word_count("cat")).to(eq(2))
+  end
+
+  it('manages uppercased characters in input string') do
+    expect("CAT, DOG, BIRD, CAT, DOG".word_count("cat")).to(eq(2))
   end
 end
