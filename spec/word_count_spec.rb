@@ -17,4 +17,8 @@ describe('String#word_count') do
   it('manages uppercased characters in target word') do
     expect("cat, dog, bird, cat, dog".word_count("CAT")).to(eq(2))
   end
+
+  it('manages empty inputs') do
+    expect("cat, dog, bird, cat, dog".word_count(nil)).to(eq("What are you doing"))
+  end
 end
